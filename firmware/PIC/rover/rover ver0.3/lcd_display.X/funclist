@@ -1,0 +1,11 @@
+_lcdSetPos: CODE, 4094 0 68
+__stringdata: SMALLCONST, 3841 0 25
+_main: CODE, 4230 0 58
+_writeDigit: CODE, 4338 0 50
+__initialization: CODE, 4430 0 0
+_writeByte: CODE, 4388 0 22
+_lcdWriteCmd: CODE, 4162 0 68
+_lcdWriteStrC: CODE, 4288 0 50
+_lcdWriteData: CODE, 4410 0 20
+_lcdInit: CODE, 3868 0 226
+Total: 587

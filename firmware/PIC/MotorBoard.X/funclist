@@ -1,0 +1,6 @@
+_initialize_i2c: CODE, 88 0 41
+_ISR: CODE, 28 0 60
+_main: CODE, 129 0 11
+__initialization: CODE, 21 0 3
+_config: CODE, 140 0 10
+Total: 125

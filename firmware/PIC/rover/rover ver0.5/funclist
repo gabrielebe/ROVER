@@ -1,0 +1,11 @@
+i1_sendByte: CODE, 259 0 10
+__stringtab: STRING, 110 0 16
+__stringdata: STRING, 126 0 20
+_ISR: CODE, 26 0 84
+_main: CODE, 204 0 26
+_sendString: CODE, 146 0 31
+__initialization: CODE, 17 0 7
+_sendByte: CODE, 247 0 12
+i1_sendString: CODE, 177 0 27
+_USART_init: CODE, 230 0 17
+Total: 250

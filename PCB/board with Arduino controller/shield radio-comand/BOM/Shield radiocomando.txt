@@ -1,0 +1,21 @@
+Partlist exported from C:/Users/Gabriele/Desktop/Shield radiocomando.sch at 10/06/2015 11:44:26
+
+Part                  Value Device       Package   Description                  MF MPN      OC_FARNELL OC_NEWARK
+9V                    AB9V  AB9V         AB9V      9-V BATTERY CLIP                                             
+CONNETTORE_MODULO_WIZ       FE05-2       FE05-2    FEMALE HEADER                            unknown    unknown  
+JOYSTICK-1                  3RP/1610G    3RP/1610G 16mm Potentiometer two level                                 
+JOYSTICK-2                  3RP/1610G    3RP/1610G 16mm Potentiometer two level                                 
+LCD                         FE08-1       FE08      FEMALE HEADER                            unknown    unknown  
+R1                          R-EU_0207/10 0207/10   RESISTOR, European symbol                                    
+R2                          R-EU_0207/10 0207/10   RESISTOR, European symbol                                    
+R3                          R-EU_0207/10 0207/10   RESISTOR, European symbol                                    
+R4                          R-EU_0207/10 0207/10   RESISTOR, European symbol                                    
+S1                          31-XX        B3F-31XX  OMRON SWITCH                    B3F-3100 959704     36M3582  
+S2                          31-XX        B3F-31XX  OMRON SWITCH                    B3F-3100 959704     36M3582  
+S3                          31-XX        B3F-31XX  OMRON SWITCH                    B3F-3100 959704     36M3582  
+S4                          255SB        255SB     SLIDING SWITCH                                               
+S5                          31-XX        B3F-31XX  OMRON SWITCH                    B3F-3100 959704     36M3582  
+SV1                         FE08-1       FE08      FEMALE HEADER                            unknown    unknown  
+SV2                         FE08-1       FE08      FEMALE HEADER                            unknown    unknown  
+SV3                         FE06-1       FE06      FEMALE HEADER                            unknown    unknown  
+SV4                         FE06-1       FE06      FEMALE HEADER                            unknown    unknown  

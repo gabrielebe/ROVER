@@ -1,0 +1,25 @@
+i2_writeByte: CODE, 67050 0 22
+_lcdSetPos: CODE, 66724 0 68
+i2_writeDigit: CODE, 66978 0 50
+__stringdata: MEDIUMCONST, 65235 0 300
+_ISR: CODE, 8 0 168
+__powers_: MEDIUMCONST, 65196 0 39
+_dpowers: MEDIUMCONST, 65117 0 40
+_main: CODE, 66654 0 70
+_writeDigit: CODE, 66928 0 50
+i2_lcdClear: CODE, 67138 0 8
+_intro: CODE, 66364 0 118
+__npowers_: MEDIUMCONST, 65157 0 39
+_lcdClean: CODE, 66136 0 228
+_lcdClear: CODE, 67130 0 8
+__initialization: CODE, 67112 0 12
+i2_lcdWriteCmd: CODE, 66860 0 68
+_writeByte: CODE, 67028 0 22
+i2_lcdWriteStrC: CODE, 66568 0 86
+i2_lcdWriteChar: CODE, 67092 0 20
+_readSwitch: CODE, 65536 0 312
+_lcdWriteCmd: CODE, 66792 0 68
+_lcdWriteStrC: CODE, 66482 0 86
+_lcdWriteChar: CODE, 67072 0 20
+_lcdInit: CODE, 65848 0 288
+Total: 2190

@@ -1,0 +1,637 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F886 ]
+[d frameptr 6 ]
+"92 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\SensorBoard.c
+[e E1768 . `uc
+index 0
+tempL 1
+tempH 2
+accXL 3
+accXH 4
+accYL 5
+accYH 6
+accZL 7
+accZH 8
+lightL 9
+lightH 10
+configuration 11
+status 12
+last 13
+]
+"100
+[e E1783 . `uc
+Temprature 0
+Light 1
+Accelerometer 2
+]
+"16 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\Analog.c
+[v _read read `(i  1 e 2 0 ]
+"161
+[v _readLight readLight `(f  1 e 3 0 ]
+"182
+[v _tempCalibration tempCalibration `(f  1 e 3 0 ]
+"199
+[v _readTemp readTemp `(f  1 e 3 0 ]
+"213
+[v _singleAxisMeasure singleAxisMeasure `(f  1 e 3 0 ]
+"230
+[v _readAccelerometer readAccelerometer `(f  1 e 3 0 ]
+"238
+[v _pointToVoltage pointToVoltage `(d  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files\Microchip\xc8\v1.31\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v1.31\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files\Microchip\xc8\v1.31\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files\Microchip\xc8\v1.31\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files\Microchip\xc8\v1.31\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"12 C:\Program Files\Microchip\xc8\v1.31\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.31\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"13 C:\Program Files\Microchip\xc8\v1.31\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+"254 C:\Program Files\Microchip\xc8\v1.31\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"277
+[v _ldexp ldexp `(d  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"51 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v1.31\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files\Microchip\xc8\v1.31\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files\Microchip\xc8\v1.31\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"9 C:\Program Files\Microchip\xc8\v1.31\sources\common\lmul.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v1.31\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+"39
+[v _log10 log10 `(d  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files\Microchip\xc8\v1.31\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files\Microchip\xc8\v1.31\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"5 C:\Program Files\Microchip\xc8\v1.31\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+"9 C:\Program Files\Microchip\xc8\v1.31\sources\common\tmul.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"3 C:\Program Files\Microchip\xc8\v1.31\sources\common\wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.31\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files\Microchip\xc8\v1.31\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"94 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\SensorBoard.c
+[v _main main `(i  1 e 2 0 ]
+"108
+[v _config config `(v  1 e 0 0 ]
+"162
+[v _ISR ISR `II(v  1 e 0 0 ]
+"195
+[v _fillRegister fillRegister `(v  1 e 0 0 ]
+"228
+[v _sendMaster sendMaster `(uc  1 e 1 0 ]
+"14 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\Analog.c
+[v _gainTemp gainTemp `f  1 e 3 0 ]
+[s S78 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"236 C:\Program Files\Microchip\xc8\v1.31\include\pic16f886.h
+[u S87 . 1 `S78 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES87  1 e 1 @6 ]
+[s S278 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"460
+[u S286 . 1 `S278 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES286  1 e 1 @12 ]
+"742
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+[s S188 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"768
+[s S194 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S199 . 1 `S188 1 . 1 0 `S194 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES199  1 e 1 @20 ]
+"1124
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S442 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1161
+[s S447 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S456 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S459 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S462 . 1 `S442 1 . 1 0 `S447 1 . 1 0 `S456 1 . 1 0 `S459 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES462  1 e 1 @31 ]
+"1377
+[v _TRISBbits TRISBbits `VES87  1 e 1 @134 ]
+"1438
+[v _TRISCbits TRISCbits `VES87  1 e 1 @135 ]
+"1518
+[v _PIE1bits PIE1bits `VES286  1 e 1 @140 ]
+[s S51 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1679
+[s S57 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S62 . 1 `S51 1 . 1 0 `S57 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES62  1 e 1 @143 ]
+"1791
+[v _SSPCON2bits SSPCON2bits `VES87  1 e 1 @145 ]
+"1841
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+[s S99 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2022
+[s S108 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S113 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S119 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S124 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S129 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S134 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S139 . 1 `S99 1 . 1 0 `S108 1 . 1 0 `S113 1 . 1 0 `S119 1 . 1 0 `S124 1 . 1 0 `S129 1 . 1 0 `S134 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES139  1 e 1 @148 ]
+"2751
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S512 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2771
+[u S518 . 1 `S512 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES518  1 e 1 @159 ]
+"3020
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"3031
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"3156
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+[s S427 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ANS4 1 0 :1:4 
+]
+"3170
+[u S433 . 1 `S427 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES433  1 e 1 @392 ]
+"3199
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3248
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+"3292
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"3354
+[v _BF BF `VEb  1 e 0 @1184 ]
+"3438
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"3482
+[v _CKP CKP `VEb  1 e 0 @164 ]
+"3500
+[v _D_A D_A `VEb  1 e 0 @1189 ]
+"3524
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3528
+[v _GO_DONE GO_DONE `VEb  1 e 0 @249 ]
+"3712
+[v _RD RD `VEb  1 e 0 @3168 ]
+"3728
+[v _R_W R_W `VEb  1 e 0 @1186 ]
+"3756
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"3968
+[v _WR WR `VEb  1 e 0 @3169 ]
+"3970
+[v _WREN WREN `VEb  1 e 0 @3170 ]
+"3 C:\Program Files\Microchip\xc8\v1.31\sources\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"65 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\SensorBoard.c
+[v _junk junk `VEuc  1 e 1 0 ]
+[v _I2C_receivedByte I2C_receivedByte `VEuc  1 e 1 0 ]
+[v _I2C_sendByte I2C_sendByte `VEuc  1 e 1 0 ]
+"66
+[v _counter counter `i  1 e 2 0 ]
+"92
+[v _Register Register `[13]uc  1 e 13 0 ]
+"94
+[v _main main `(i  1 e 2 0 ]
+{
+[v main@argc argc `i  1 p 2 66 ]
+[v main@argv argv `*.1*.1uc  1 p 2 68 ]
+"106
+} 0
+"182 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\Analog.c
+[v _tempCalibration tempCalibration `(f  1 e 3 0 ]
+{
+"184
+[v tempCalibration@vIn vIn `f  1 a 3 62 ]
+"183
+[v tempCalibration@vOut vOut `f  1 a 3 59 ]
+"196
+} 0
+"195 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\SensorBoard.c
+[v _fillRegister fillRegister `(v  1 e 0 0 ]
+{
+[v fillRegister@array array `uc  1 a 1 wreg ]
+[v fillRegister@array array `uc  1 a 1 wreg ]
+[v fillRegister@array array `uc  1 a 1 62 ]
+"216
+} 0
+"199 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\Analog.c
+[v _readTemp readTemp `(f  1 e 3 0 ]
+{
+"202
+[v readTemp@i i `i  1 a 2 62 ]
+"200
+[v readTemp@temp temp `f  1 a 3 64 ]
+"210
+} 0
+"161
+[v _readLight readLight `(f  1 e 3 0 ]
+{
+"162
+[v readLight@lightVal lightVal `d  1 a 3 58 ]
+"178
+} 0
+"5 C:\Program Files\Microchip\xc8\v1.31\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+{
+"8
+[v pow@yi yi `ul  1 a 4 45 ]
+"7
+[v pow@sign sign `uc  1 a 1 44 ]
+"5
+[v pow@x x `d  1 p 3 31 ]
+[v pow@y y `d  1 p 3 34 ]
+"31
+} 0
+"5 C:\Program Files\Microchip\xc8\v1.31\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+{
+"7
+[v log@exponent exponent `i  1 a 2 73 ]
+"5
+[v log@x x `d  1 p 3 69 ]
+"9
+[v log@coeff coeff `DCC[9]d  1 s 27 coeff ]
+"36
+} 0
+"12 C:\Program Files\Microchip\xc8\v1.31\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+{
+"14
+[v exp@exponent exponent `i  1 a 2 28 ]
+"15
+[v exp@sign sign `uc  1 a 1 30 ]
+"12
+[v exp@x x `d  1 p 3 18 ]
+"17
+[v exp@coeff coeff `DCC[10]d  1 s 30 coeff ]
+"57
+} 0
+"277 C:\Program Files\Microchip\xc8\v1.31\sources\common\frexp.c
+[v _ldexp ldexp `(d  1 e 3 0 ]
+{
+[v ldexp@value value `d  1 p 3 69 ]
+[v ldexp@newexp newexp `i  1 p 2 72 ]
+"307
+} 0
+"15 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"13 C:\Program Files\Microchip\xc8\v1.31\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+{
+"15
+[v floor@i i `d  1 a 3 13 ]
+"16
+[v floor@expon expon `i  1 a 2 16 ]
+"13
+[v floor@x x `d  1 p 3 10 ]
+"30
+} 0
+"254 C:\Program Files\Microchip\xc8\v1.31\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+{
+[v frexp@value value `d  1 p 3 0 ]
+[v frexp@eptr eptr `*.4i  1 p 1 3 ]
+"274
+} 0
+"44 C:\Program Files\Microchip\xc8\v1.31\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 1 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 5 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 0 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 67 ]
+"73
+} 0
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"42 C:\Program Files\Microchip\xc8\v1.31\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+{
+"44
+[v ___altoft@sign sign `uc  1 a 1 9 ]
+[v ___altoft@exp exp `uc  1 a 1 8 ]
+"42
+[v ___altoft@c c `l  1 p 4 75 ]
+"57
+} 0
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+{
+"6
+[v eval_poly@res res `d  1 a 3 66 ]
+"4
+[v eval_poly@x x `d  1 p 3 59 ]
+[v eval_poly@d d `*.24DCCd  1 p 1 62 ]
+[v eval_poly@n n `i  1 p 2 63 ]
+"12
+} 0
+"4 C:\Program Files\Microchip\xc8\v1.31\sources\common\bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"8
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"16
+} 0
+"18 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f2 f2 `f  1 p 3 59 ]
+[v ___ftsub@f1 f1 `f  1 p 3 62 ]
+"25
+} 0
+"86 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 58 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 57 ]
+[v ___ftadd@sign sign `uc  1 a 1 56 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 46 ]
+[v ___ftadd@f2 f2 `f  1 p 3 49 ]
+"148
+} 0
+"35 C:\Program Files\Microchip\xc8\v1.31\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 13 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"230 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\Analog.c
+[v _readAccelerometer readAccelerometer `(f  1 e 3 0 ]
+{
+[v readAccelerometer@axis axis `i  1 p 2 49 ]
+"235
+} 0
+"16
+[v _read read `(i  1 e 2 0 ]
+{
+"17
+[v read@analogValue analogValue `i  1 a 2 3 ]
+"16
+[v read@channel channel `i  1 p 2 0 ]
+[v read@justification justification `uc  1 p 1 2 ]
+"158
+} 0
+"238
+[v _pointToVoltage pointToVoltage `(d  1 e 3 0 ]
+{
+[v pointToVoltage@point point `d  1 p 3 46 ]
+"240
+} 0
+"51 C:\Program Files\Microchip\xc8\v1.31\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"54
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 25 ]
+"53
+[v ___ftmul@sign sign `uc  1 a 1 29 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 28 ]
+[v ___ftmul@exp exp `uc  1 a 1 24 ]
+"51
+[v ___ftmul@f1 f1 `f  1 p 3 14 ]
+[v ___ftmul@f2 f2 `f  1 p 3 17 ]
+"84
+} 0
+"49 C:\Program Files\Microchip\xc8\v1.31\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"52
+[v ___ftdiv@f3 f3 `f  1 a 3 41 ]
+"51
+[v ___ftdiv@sign sign `uc  1 a 1 45 ]
+[v ___ftdiv@exp exp `uc  1 a 1 44 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 40 ]
+"49
+[v ___ftdiv@f2 f2 `f  1 p 3 30 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 33 ]
+"78
+} 0
+"32 C:\Program Files\Microchip\xc8\v1.31\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files\Microchip\xc8\v1.31\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"108 C:\Users\Harpal\Desktop\Materie\Progetti\Progetto_Firmware__finale\SensorBoard.X\SensorBoard.c
+[v _config config `(v  1 e 0 0 ]
+{
+"160
+} 0
+"162
+[v _ISR ISR `II(v  1 e 0 0 ]
+{
+"193
+} 0
+"228
+[v _sendMaster sendMaster `(uc  1 e 1 0 ]
+{
+"229
+[v sendMaster@indexCounter indexCounter `uc  1 s 1 indexCounter ]
+"281
+} 0

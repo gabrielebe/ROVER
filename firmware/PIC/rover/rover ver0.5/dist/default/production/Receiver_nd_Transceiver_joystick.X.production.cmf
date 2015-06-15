@@ -1,0 +1,368 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+end_init CODE 0 10 10 1 2
+reset_vec CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+cinit CODE 0 11 11 9 2
+intentry CODE 0 4 4 C 2
+text6 CODE 0 103 103 A 2
+text5 CODE 0 B1 B1 1B 2
+text4 CODE 0 1A 1A 54 2
+text3 CODE 0 E6 E6 11 2
+text2 CODE 0 F7 F7 C 2
+text1 CODE 0 92 92 1F 2
+maintext CODE 0 CC CC 1A 2
+cstackBANK0 BANK0 1 34 34 B 1
+cstackCOMMON COMMON 1 70 70 B 1
+clrtext CODE 0 10D 10D 8 2
+bssBANK0 BANK0 1 20 20 14 1
+bssCOMMON COMMON 1 7B 7B 2 1
+strings STRING 0 6E 6E 24 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 003F-006F 1
+BANK1 00A0-00EF 1
+BANK2 0120-014F 1
+CODE 0001-0003 2
+CODE 0115-07FF 2
+COMMON 007D-007D 1
+CONST 0001-0003 2
+CONST 0115-07FF 2
+EEDATA 2100-217F 2
+ENTRY 0001-0003 2
+ENTRY 0115-07FF 2
+IDLOC 2000-2003 2
+RAM 003F-006F 1
+RAM 00A0-00EF 1
+RAM 0120-014F 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01EF 1
+STACK 00A0-00EF 1
+STRCODE 0001-0003 2
+STRCODE 0115-07FF 2
+STRING 0001-0003 2
+STRING 0115-07FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":84 4 intentry CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":224 11 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":227 11 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":261 11 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":262 12 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":265 13 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":266 14 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":267 15 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":268 16 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":269 17 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":275 18 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":276 18 cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":277 19 cinit CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":84 1A text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":85 1A text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":87 1C text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":91 20 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":92 28 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":93 30 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":94 34 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":96 35 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":97 36 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":98 3B text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":99 3D text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":100 4A text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":99 4F text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":101 60 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":104 60 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":106 63 text4 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":76 92 text1 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":77 92 text1 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":78 9C text1 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":79 A4 text1 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":80 AA text1 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":77 B0 text1 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":76 B1 text5 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":77 B1 text5 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":78 BB text5 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":79 C3 text5 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":80 C7 text5 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":77 CB text5 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":44 CC maintext CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":45 CC maintext CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":46 CD maintext CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":47 DC maintext CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":48 E3 maintext CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":49 E4 maintext CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":51 E5 maintext CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":58 E6 text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":59 E6 text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":60 E9 text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":61 EA text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":62 EB text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":63 EC text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":64 EE text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":65 EF text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":66 F2 text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":68 F3 text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":70 F6 text3 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":71 F7 text2 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":72 FA text2 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":73 FE text2 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":74 102 text2 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":71 103 text6 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":72 104 text6 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":73 108 text6 CODE
+"C:\Users\Harpal\Desktop\Roberino\Receiver nd Transceiver joystick.X\joystickMain.c":74 10C text6 CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":248 10D clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":249 10D clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":250 10E clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":251 10E clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":252 10F clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":253 110 clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":254 111 clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":255 112 clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":256 113 clrtext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s2bo.":257 114 clrtext CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_sendString 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_t 7C 0 COMMON 1 bssCOMMON dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_ISR 34 0 CODE 0 text4 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hintentry 20 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ISR@i 79 0 COMMON 1 cstackCOMMON dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__end_ofi1_sendByte 21A 0 CODE 0 text6 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_main 198 0 CODE 0 maintext dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+btemp 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+start 20 0 CODE 0 init C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+_RCREG 1A 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_TXREG 19 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+_SPBRG 99 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of__stringtab FC 0 STRING 0 strings dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_sendByte 1EE 0 CODE 0 text2 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_rcbuf 20 0 BANK0 1 bssBANK0 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__end_of__stringdata 124 0 STRING 0 strings dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__end_of_ISR DC 0 CODE 0 text4 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+_PIE1bits 8C 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits C 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+i1_sendString 162 0 CODE 0 text5 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 34 0 BANK0 1 cstackBANK0 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+saved_w 7E 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hinit 20 0 CODE 0 init -
+__Linit 20 0 CODE 0 init -
+__end_of_main 1CC 0 CODE 0 maintext dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__size_ofi1_sendByte 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+end_of_initialization 30 0 CODE 0 cinit dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__stringtab DC 0 STRING 0 strings dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_RCSTAbits 18 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_TRISBbits 86 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_TXSTAbits 98 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings DC 0 STRING 0 strings dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+i1sendString@s 71 0 COMMON 1 cstackCOMMON dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__size_ofi1_sendString 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__end_of_sendString 162 0 CODE 0 text1 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__ptext1 124 0 CODE 0 text1 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__ptext2 1EE 0 CODE 0 text2 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__ptext3 1CC 0 CODE 0 text3 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__ptext4 34 0 CODE 0 text4 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__ptext5 162 0 CODE 0 text5 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__ptext6 206 0 CODE 0 text6 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of__initialization 30 0 CODE 0 cinit dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__size_of_USART_init 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+i1_sendByte 206 0 CODE 0 text6 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_sendString 124 0 CODE 0 text1 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__size_of_sendByte 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+i1sendByte@Byte 70 0 COMMON 1 cstackCOMMON dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__end_of_sendByte 206 0 CODE 0 text2 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hcinit 34 0 CODE 0 cinit -
+__Lcinit 22 0 CODE 0 cinit -
+sendString@s 35 0 BANK0 1 cstackBANK0 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_rcindex 7B 0 COMMON 1 bssCOMMON dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+clear_ram0 21A 0 CODE 0 clrtext dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__CFG_FOSC$EXTRCCLK 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_USART_init 1CC 0 CODE 0 text3 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 7B 0 COMMON 1 bssCOMMON dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hend_init 22 0 CODE 0 end_init -
+__Lend_init 20 0 CODE 0 end_init -
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_ofi1_sendString 198 0 CODE 0 text5 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__stringdata FC 0 STRING 0 strings dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s2bo.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+sendByte@Byte 34 0 BANK0 1 cstackBANK0 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+start_initialization 22 0 CODE 0 cinit dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 198 0 CODE 0 maintext dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__initialization 22 0 CODE 0 cinit dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__stringbase FA 0 STRING 0 strings dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+__end_of_USART_init 1EE 0 CODE 0 text3 dist/default/production\Receiver_nd_Transceiver_joystick.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2
+intentry 0 4 8 6A 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 D 1
+bssBANK0 1 20 20 1F 1
+strings 0 6E DC 24 2
+text1 0 92 124 83 2

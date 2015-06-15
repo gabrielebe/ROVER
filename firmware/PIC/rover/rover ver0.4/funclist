@@ -1,0 +1,10 @@
+i2_sendByte: CODE, 4142 0 14
+__stringdata: SMALLCONST, 3841 0 20
+_ISR: CODE, 8 0 232
+_main: CODE, 4046 0 38
+_sendString: CODE, 3862 0 92
+__initialization: CODE, 4084 0 12
+_sendByte: CODE, 4128 0 14
+i2_sendString: CODE, 3954 0 92
+_USART_init: CODE, 4106 0 22
+Total: 536

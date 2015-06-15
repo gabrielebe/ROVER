@@ -1,0 +1,278 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+end_init CODE 0 0 0 2 2
+config CONFIG 0 2007 2007 2 2
+$dist/default/production\SensorControlBoard.X.production.obj
+cinit CODE 0 7FB 7FB 5 2
+maintext CODE 0 77F 77F 7C 2
+cstackCOMMON COMMON 1 70 70 C 1
+bssCOMMON COMMON 1 7C 7C 2 1
+strings STRING 0 2 2 3F 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0020-006F 1
+BANK1 00A0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 0041-077E 2
+CODE 0800-0FFF 2
+CONST 0041-077E 2
+CONST 0800-0FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0041-077E 2
+ENTRY 0800-0FFF 2
+IDLOC 2000-2003 2
+RAM 0020-006F 1
+RAM 00A0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STACK 0110-016F 1
+STRCODE 0041-077E 2
+STRCODE 0800-0FFF 2
+STRING 0041-077E 2
+STRING 0800-0FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\SensorControlBoard.X.production.obj
+"D:\Johnny\SensorControlBoard.X\main.c":25 77F maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":31 77F maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":32 782 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":33 783 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":35 784 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":37 785 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":39 789 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":41 796 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":39 79F maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":44 7B0 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":46 7B4 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":48 7C1 maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":46 7CA maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":50 7DB maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":51 7DE maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":53 7EB maintext CODE
+"D:\Johnny\SensorControlBoard.X\main.c":51 7F4 maintext CODE
+"C:\Users\Harpal\AppData\Local\Temp\s49o.":531 7FB cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s49o.":534 7FB cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s49o.":544 7FB cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s49o.":545 7FC cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s49o.":551 7FD cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s49o.":552 7FD cinit CODE
+"C:\Users\Harpal\AppData\Local\Temp\s49o.":553 7FE cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__S0 2009 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+_main EFE 0 CODE 0 maintext dist/default/production\SensorControlBoard.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+btemp 7E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__end_ofexp@coeff 4C 0 STRING 0 strings dist/default/production\SensorControlBoard.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+start 0 0 CODE 0 init C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+_TRISB 86 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+_PORTB 6 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+_ANSEL 9B 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Hconfig 4012 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of__stringtab 10 0 STRING 0 strings dist/default/production\SensorControlBoard.X.production.obj
+main@i 76 0 COMMON 1 cstackCOMMON dist/default/production\SensorControlBoard.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_errno 7C 0 COMMON 1 bssCOMMON dist/default/production\SensorControlBoard.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+_PIE1bits 8C 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits C 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+_SSPADD 93 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+_ADRESH 1E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_ADRESL 9E 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+stacklo 0 0 ABS 0 - C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+__end_of_main FF6 0 CODE 0 maintext dist/default/production\SensorControlBoard.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\SensorControlBoard.X.production.obj
+__stringtab 4 0 STRING 0 strings dist/default/production\SensorControlBoard.X.production.obj
+_TRISAbits 85 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+_TRISBbits 86 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+_ANSELbits 9B 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 4 0 STRING 0 strings dist/default/production\SensorControlBoard.X.production.obj
+_GO_DONE FA 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 1 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+_SSPSTAT 94 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\SensorControlBoard.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FF6 0 CODE 0 cinit -
+__size_of_main 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+main@i_65 78 0 COMMON 1 cstackCOMMON dist/default/production\SensorControlBoard.X.production.obj
+main@i_66 7A 0 COMMON 1 cstackCOMMON dist/default/production\SensorControlBoard.X.production.obj
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\SensorControlBoard.X.production.obj
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+_SSPCONbits 14 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__Hend_init 4 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_oflog@coeff 82 0 STRING 0 strings dist/default/production\SensorControlBoard.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Harpal\AppData\Local\Temp\s49o.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\SensorControlBoard.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+start_initialization FF6 0 CODE 0 cinit dist/default/production\SensorControlBoard.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext EFE 0 CODE 0 maintext dist/default/production\SensorControlBoard.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__initialization FF6 0 CODE 0 cinit dist/default/production\SensorControlBoard.X.production.obj
+__stringbase E 0 STRING 0 strings dist/default/production\SensorControlBoard.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+__CFG_CCPMX$RB0 0 0 ABS 0 - dist/default/production\SensorControlBoard.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2
+cinit 0 7FB FF6 5 2
+config 0 2007 400E 2 2
+cstackCOMMON 1 70 70 E 1
+maintext 0 77F EFE 7C 2
+strings 0 2 4 3F 2
